@@ -1,5 +1,8 @@
 <template>
-  
+  <div>
+    <game-header></game-header>
+    <app-footer></app-footer>
+  </div>
 </template>
 
 <script>
