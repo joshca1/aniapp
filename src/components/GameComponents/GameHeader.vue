@@ -35,18 +35,26 @@
                 Opciones
                 </a>
                 <div class="navbar-dropdown">
+                    
                     <a href="/datosBancarios" class="navbar-item">
-                    Datos Bancarios
+                    <i class="far fa-credit-card"></i>
+                    <p class="">Datos Bancarios</p> 
                     </a>
+
                     <a href="/datosBasicos" class="navbar-item">
+                    <i class="fas fa-user"></i>
                     Datos Basicos
                     </a>
                     <a href="/invitaciones" class="navbar-item">
+                    <i class="far fa-envelope"></i>
                     Invitaciones
                     </a>
                     <hr href="/" class="navbar-divider">
-
-                    <a class="navbar-item">Salir del Sistema</a>
+                    
+                    <a class="navbar-item">
+                      <i class="fas fa-power-off"></i>
+                      Salir del Sistema
+                    </a>
                 </div>
 
               </a>
