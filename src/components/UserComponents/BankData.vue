@@ -71,17 +71,12 @@
             </div>
           </div>
         </div>
-      <app-footer></app-footer>
+      <main-footer></main-footer>
   </div>
 </template>
 <script>
-import Header from '../GameComponents/GameHeader'
-import Footer from '../main/Footer'
+
 export default {
-  components: {
-    GameHeader: Header,
-    AppFooter: Footer
-  }  
 }
 </script>
 <style>

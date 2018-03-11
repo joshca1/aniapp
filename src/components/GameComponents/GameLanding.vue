@@ -460,13 +460,12 @@
 
         </section>
 
-      <app-footer></app-footer>
+      <main-footer></main-footer>
     </div>
 </template>
 
 <script>
-import Header from './GameHeader'
-import Footer from '../main/Footer'
+
 export default {
   data () {
     return {
@@ -474,10 +473,6 @@ export default {
       sorteo_actual: 'Lotto Zulia 3:00 pm - 03-03-2019',
       total_jugado: '5000 Bs'
     }
-  },
-  components: {
-    GameHeader: Header,
-    AppFooter: Footer
   }
 }
 </script>

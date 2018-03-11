@@ -1,6 +1,6 @@
 <template>
 <div>
-  <home-header></home-header>
+  <main-header></main-header>
 <section class="section">
   <div class="columns">
    <div class="column">
@@ -50,19 +50,14 @@
    </div>
   </div>
 </section>
-  <home-footer></home-footer>
+  <main-footer></main-footer>
 </div>
 </template>
 
 <script>
-import Header from './main/Header'
-import Footer from './main/Footer'
+
 export default {
   methods: {
-  },
-  components: {
-    HomeHeader: Header,
-    HomeFooter: Footer
   }
 }
 </script>

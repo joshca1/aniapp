@@ -4,23 +4,22 @@ import VueRouter from 'vue-router'
 import { routes } from './routes.js'
 import VueResource from 'vue-resource'
 Vue.config.productionTip = false
+import { Bar } from 'vue-chartjs'
+import GameHeader from './components/GameComponents/GameHeader'
+import Footer from './components/main/Footer'
+import Header from './components/main/Header'
+Vue.component('main-header', Header )
+Vue.component('main-footer', Footer )
+Vue.component('game-header', GameHeader)
 
-import { Line } from 'vue-chartjs'
 Vue.component('line-chart', {
-  extends: Line,
+  extends: Bar,
+  props: ['data', 'options'],
   mounted () {
-    this.renderChart({
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [
-        {
-          label: 'Data One',
-          backgroundColor: '#f87979',
-          data: [40, 39, 10, 40, 39, 80, 40]
-        }
-      ]
-    }, {responsive: true, maintainAspectRatio: false})
+    this.renderChart(this.data, this.options)
   }
 })
+
 
 Vue.use(VueResource)
 Vue.use(VueRouter)

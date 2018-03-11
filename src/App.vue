@@ -1,7 +1,6 @@
 <template>
 <div class="hero">
 <router-view></router-view>
-<line-chart></line-chart>
 </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 <div>
-<app-header></app-header>
+<main-header></main-header>
     <section class="section">
     <div class="column is-6 is-offset-3">
         <div class="box">
@@ -114,23 +114,18 @@
         </div>
     </div>
     </section>
-<app-footer></app-footer>
+<main-footer></main-footer>
 </div>
 </template>
 
 <script>
-import Header from './main/Header'
-import Footer from './main/Footer'
+
 export default {
     data () {
         return {
             error: 'Error Mensaje'
         }
-    },
-  components: {
-    AppHeader: Header,
-    AppFooter: Footer
-  }
+    }
 }
 </script>
 

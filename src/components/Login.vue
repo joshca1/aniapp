@@ -1,6 +1,6 @@
 <template>
     <div>
-    <app-header></app-header>
+    <main-header></main-header>
     <section class="section has-text-centered">
         <div class="column is-6 is-offset-3">
             <p>Entrar o <a href="/registro">Registrarse</a> </p>
@@ -51,18 +51,15 @@
         </div>
       </div>
     </section>
-    <app-footer></app-footer>
+    <main-footer></main-footer>
     </div>
 </template>
 
 <script>
-import Header from './main/Header'
-import Footer from './main/Footer'
+
 import facebookLogin from 'facebook-login-vuejs'
 export default {
   components: {
-    AppHeader: Header,
-    AppFooter: Footer,
     facebookLogin
   },
   created () {

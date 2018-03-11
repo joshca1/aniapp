@@ -1,9 +1,9 @@
 <template>
   <div>
-  <app-home></app-home>
+  <main-header></main-header>
     <section class="section">
       <div class="column is-10 is-offset-1">
-        <div class="box has-text-justified">
+        <div class="content box has-text-justified">
           <h1 class="title has-text-centered">Reglas de Juego.</h1>
                     <ol>
             <li>LOTOANIMALITO es un juego de ENVITE Y AZAR, que consiste en la extracción aleatoria de UN (1) ANIMAL que resultará ganador en cada uno de los sorteos establecidos. Permitiendo escoger entre 38 animales y pagándose 30 veces el monto de la apuesta .</li>
@@ -28,18 +28,14 @@
       </div>
     </section>
 
-  <app-footer></app-footer>
+  <main-footer></main-footer>
   </div>
 </template>
 
 
 <script>
-import Home from './main/Header'
-import Footer from './main/Footer'
+
 export default {
-  components: {
-    AppHome: Home,
-    AppFooter: Footer
-  }
+
 }
 </script>
